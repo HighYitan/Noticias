@@ -1,8 +1,31 @@
 @media only screen and (max-width: 768px) {
 	[id*="anuncio"]#anuncio{
-
+		bottom:0%;
+		
+		width:320px;
+		height:100px;
+		background-color:red;
 	}
+	[id*="contenedor_noticias"]#contenedor_noticias{
+		padding-bottom:100px;
+	}	
 }
 #anuncio{
+	right:0%;
+	top:10%;
+	width:300px;
+	height:250px;
 	
+	background-color:red;
+}
+#contenedor_noticias{
+	padding-right:300px;
+}
+.affix{
+	top:0%;
+	width:100%;
+	z-index:9999 !important;
+}
+.affix + container-fluid{
+	padding-top:70px;
 }
