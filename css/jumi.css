@@ -11,15 +11,20 @@
 	}	
 }
 #anuncio{
-	right:0%;
-	top:10%;
 	width:300px;
 	height:250px;
+	float:right;
+	background-color:blue;
+	position:absolute;
+	right:10px;
+	display:block;
 	
-	background-color:red;
 }
 #contenedor_noticias{
-	padding-right:300px;
+	margin-left:5%;
+	margin-right:330px;
+	padding-right:0%;
+	background-color:red;
 }
 .affix{
 	top:0%;
@@ -28,4 +33,10 @@
 }
 .affix + container-fluid{
 	padding-top:70px;
+}
+body{
+	background-image:url(../img/fondo.jpg);
+}
+#titulo{
+	background-image:url(../img/Castlevania.jpg);
 }
