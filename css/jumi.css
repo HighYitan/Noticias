@@ -21,11 +21,31 @@
 	
 }
 #contenedor_noticias{
-	margin-left:5%;
+	margin-left:2%;
 	margin-right:330px;
 	padding-right:0%;
+	padding-left:0%;
 	background-color:red;
 }
+.contenedor{
+	background-color:green;
+	margin-right:5%;
+	margin-left:5%;
+
+}
+.ultimahora{
+	text-align:center;
+}
+.titulo{
+	text-align:center;
+}
+.presentacion{
+	
+}
+/*container-fluid{
+	padding-top:70px;
+}*
+/*
 .affix{
 	top:0%;
 	width:100%;
@@ -34,9 +54,16 @@
 .affix + container-fluid{
 	padding-top:70px;
 }
-body{
-	background-image:url(../img/fondo.jpg);
+*/
+#body{
+	background-image:url(../img/fondo2.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
 }
 #titulo{
-	background-image:url(../img/Castlevania.jpg);
+	/*margin-top:3.5%;*/
+	background:url('../img/Castlevania.jpg') center;
+	background-size:130% 200%;
+	color:#fff;
+	margin-bottom:0%;
 }
