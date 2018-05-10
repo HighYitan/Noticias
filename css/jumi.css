@@ -10,6 +10,21 @@
 		padding-bottom:100px;
 	}	
 }
+a:link{
+	text-decoration:none;
+	color:red;
+}
+a:visited {
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: none;
+    color:blue;
+}
+a:active {
+    text-decoration: none;
+    color:purple;
+}
 #anuncio{
 	width:300px;
 	height:250px;
@@ -35,12 +50,32 @@
 }
 .ultimahora{
 	text-align:center;
+	text-decoration: underline;
+	color:yellow;
 }
 .titulo{
 	text-align:center;
+	font-weight:bold;
+	font-style:italic;
 }
 .presentacion{
-	
+	text-align:justify;
+	color:yellow;
+}
+.caratula{
+	border-style: solid;
+	border-color:black;
+	margin-left:15%;
+	margin-right:15%;
+}
+#boton{
+	margin-top:5%;
+	margin-bottom:5%;
+	padding:5%;
+	color:purple;
+	font-weight:bold;
+	font-style:italic;
+	font-size:200%;
 }
 /*container-fluid{
 	padding-top:70px;
@@ -60,7 +95,7 @@
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 }
-#titulo{
+#portada{
 	/*margin-top:3.5%;*/
 	background:url('../img/Castlevania.jpg') center;
 	background-size:130% 200%;

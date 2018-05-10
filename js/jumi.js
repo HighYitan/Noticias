@@ -12,4 +12,10 @@ function contar(){
 		counter++
 	}
 }
+
+show();
+$GetJson(..., function(json)){
+	Cosas(json),
+	hide(),
+};
 */
