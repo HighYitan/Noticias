@@ -46,27 +46,50 @@ a:active {
 	background-color:green;
 	margin-right:5%;
 	margin-left:5%;
-
 }
 .ultimahora{
 	text-align:center;
+	font-weight:bold;
 	text-decoration: underline;
-	color:yellow;
+	color:#710101;
+	text-shadow:black 7px 7px 10px;
+	margin-bottom:2%;
 }
 .titulo{
 	text-align:center;
 	font-weight:bold;
 	font-style:italic;
+	padding-top:3%;
+	text-shadow:red 4px 4px 7px;
+	color:#710101;
 }
 .presentacion{
 	text-align:justify;
 	color:yellow;
+	margin-left:3%;
+	margin-right:3%;
+}
+.leer{
+	margin-top:2%;
+}
+.fecha{
+	text-shadow:purple 4px 4px 7px;
+	font-weight:bold;
+	text-align:left;
+	color:purple;
+	margin-left:3%;
+	margin-bottom:2%;
+	margin-top:4%;
+}
+.container_caratula{
+	width:100%;
+	padding:1%;
 }
 .caratula{
+	border:5px;
 	border-style: solid;
 	border-color:black;
-	margin-left:15%;
-	margin-right:15%;
+	width: 100%;
 }
 #boton{
 	margin-top:5%;
