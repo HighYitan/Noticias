@@ -1,16 +1,31 @@
-var data = 1;
+var datos = 1;
+/*
+var auto=false;
+*/
 $(function(){
+
     $('#boton').click(function() { /*revisar EL BOTON HA DE ESTAR OPERATIVO SOLO SI EL AUTOSCROLL ESTA DESACTIVADO???*/
-		if (data < 6) {
-			$.getJSON( 'https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/data/data' + data + '.json', function(jsonObject) {
-				afegirBloc(jsonObject);
+		if (datos < 3) {
+			$.getJSON('https://rawgit.com/HighYitan/Noticias/master/data/jumi.json'/* + datos + '.json'*/, function(jsonObject) {
+				añadir(jsonObject);
 			});
-			data++;
+			datos++;
 		}
 		else {
-			$('#boton').text('NO HAY MÁS NOTICIAS');
+			$('#boton').text('No hay más noticias, jalabolas');
 		}
 	});
+/*
+	$('#autoscroll').click(function(){
+		if (auto) {
+			auto=false;
+			$('#autoscroll').text('Activar Autoscroll');
+		} else {
+			auto=true;
+			$('#autoscroll').text('Desactivar AutoScroll');
+		}
+	});
+*/
 });	
 				/*
 				<div class="contenedor">
@@ -20,15 +35,15 @@ $(function(){
 					<div class="container_caratula center-block"><a href="http://www.google.es"><img class="img-responsive caratula" src="img/lords.jpg"></a></div>
 				</div>
 */
-function afegirBloc(jsonObject) {
+function añadir(jsonObject) {
 	$('#contenedor').append('<div class="contenedor">'); 
 	$.each(jsonObject, function(i, item) {
 		$('.contenedor:last').append(
 				
-				'<a href="http://www.google.es"><h2 class="titulo">Castlevania Judgement el juego de lucha de la saga es novedad entre sus fans</h2></a>' +
-				'<h3 class="fecha">18 de noviembre de 2008</h3>' +
-				'<h4 class="presentacion">Hoy celebramos la salida al mercado del nuevo reboot de la saga de vídeojuegos: Castlevania, hoy el 27 de agosto de 2013 ha sido lanzado en PC tras 3 años de exclusividad en consolas (XBOX 360 y PlayStation 3), este lanzamiento dará la oportunidad a jugadores de ordenador a probar este maravilloso juego de la mano de Konami y el estudio Español MercurySteam...<div class="leer"><a href="http://www.google.es">Leer más...</a></div></h4>' +
-				'<div class="container_caratula center-block"><a href="http://www.google.es"><img class="img-responsive caratula" src="img/lords.jpg"></a></div>' 
+				'<a href="http://www.google.es"><h2 class="titulo">' + item.titulo + '</h2></a>' +
+				'<h3 class="fecha">' + item.fecha + '</h3>' +
+				'<h4 class="presentacion">' + item.presentacion + '<div class="leer"><a href="http://www.google.es">Leer más...</a></div></h4>' +
+				'<div class="container_caratula center-block"><a href="http://www.google.es"><img class="img-responsive caratula" src="' + item.imagen + '" alt="' + item.alter + '"></a></div>' 
 				
 /*
 			'<div class="col-sm-12 col-md-6">'
