@@ -1,3 +1,65 @@
+var data = 1;
+$(function(){
+    $('#boton').click(function() { /*revisar EL BOTON HA DE ESTAR OPERATIVO SOLO SI EL AUTOSCROLL ESTA DESACTIVADO???*/
+		if (data < 6) {
+			$.getJSON( 'https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/data/data' + data + '.json', function(jsonObject) {
+				afegirBloc(jsonObject);
+			});
+			data++;
+		}
+		else {
+			$('#boton').text('NO HAY MÁS NOTICIAS');
+		}
+	});
+});	
+				/*
+				<div class="contenedor">
+					<a href="http://www.google.es"><h2 class="titulo">Castlevania Judgement el juego de lucha de la saga es novedad entre sus fans</h2></a>
+					<h3 class="fecha">18 de noviembre de 2008</h3>
+					<h4 class="presentacion">Hoy celebramos la salida al mercado del nuevo reboot de la saga de vídeojuegos: Castlevania, hoy el 27 de agosto de 2013 ha sido lanzado en PC tras 3 años de exclusividad en consolas (XBOX 360 y PlayStation 3), este lanzamiento dará la oportunidad a jugadores de ordenador a probar este maravilloso juego de la mano de Konami y el estudio Español MercurySteam...<div class="leer"><a href="http://www.google.es">Leer más...</a></div></h4>
+					<div class="container_caratula center-block"><a href="http://www.google.es"><img class="img-responsive caratula" src="img/lords.jpg"></a></div>
+				</div>
+*/
+function afegirBloc(jsonObject) {
+	$('#contenedor').append('<div class="contenedor">'); 
+	$.each(jsonObject, function(i, item) {
+		$('.contenedor:last').append(
+				
+				'<a href="http://www.google.es"><h2 class="titulo">Castlevania Judgement el juego de lucha de la saga es novedad entre sus fans</h2></a>' +
+				'<h3 class="fecha">18 de noviembre de 2008</h3>' +
+				'<h4 class="presentacion">Hoy celebramos la salida al mercado del nuevo reboot de la saga de vídeojuegos: Castlevania, hoy el 27 de agosto de 2013 ha sido lanzado en PC tras 3 años de exclusividad en consolas (XBOX 360 y PlayStation 3), este lanzamiento dará la oportunidad a jugadores de ordenador a probar este maravilloso juego de la mano de Konami y el estudio Español MercurySteam...<div class="leer"><a href="http://www.google.es">Leer más...</a></div></h4>' +
+				'<div class="container_caratula center-block"><a href="http://www.google.es"><img class="img-responsive caratula" src="img/lords.jpg"></a></div>' 
+				
+/*
+			'<div class="col-sm-12 col-md-6">'
+				+ '<div class="thumbnail shortNew">'
+					+ '<a href="#">'
+						+ '<h2 class="text-center">' + item.titulo + '</h2>'
+						+ '<p class="text-right fecha">' + item.fecha + '</p>'
+						+ '<p class="text-justify">' + item.texto + '</p>'				
+					+ '</a>'
+					+ '<picture>'
+						+ '<source srcset="' + item.imagenXs + '" media="(max-width: 400px)">'
+						+ '<source srcset="' + item.imagen + '" media="(min-width: 401px)">'
+						+ '<img src="' + item.imagen + '" class="img-responsive center-block" alt="' + item.alt + '">'
+					+ '</picture>'
+				+ '</div>'
+			+ '</div>'
+			*/
+		);
+	});
+	$('#contenedor').append('</div>');
+}
+
+
+
+
+
+
+
+
+
+
 /*
 var counter = 0;
 var timer = setInterval(contar,1000);
