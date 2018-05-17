@@ -12,7 +12,7 @@
 }
 a:link{
 	text-decoration:none;
-	color:red;
+	color:black;
 }
 a:visited {
     text-decoration:none;
@@ -29,7 +29,7 @@ a:active {
 	width:300px;
 	height:250px;
 	float:right;
-	background-color:blue;
+	/*background-color:blue;*/
 	position:absolute;
 	right:10px;
 	display:block;
@@ -40,10 +40,10 @@ a:active {
 	margin-right:330px;
 	padding-right:0%;
 	padding-left:0%;
-	background-color:red;
+	/*background-color:red;*/
 }
 .contenedor{
-	background-color:green;
+	/*background-color:green;*/
 	margin-right:5%;
 	margin-left:5%;
 }
@@ -115,8 +115,8 @@ a:active {
 */
 #body{
 	background-image:url(../img/fondo2.jpg);
-	background-size:100% 100%;
-	background-repeat: no-repeat;
+	background-size:100%;
+	background-repeat: repeat-y;
 }
 #portada{
 	/*margin-top:3.5%;*/

@@ -5,7 +5,7 @@ var auto=false;
 $(function(){
 
     $('#boton').click(function() { /*revisar EL BOTON HA DE ESTAR OPERATIVO SOLO SI EL AUTOSCROLL ESTA DESACTIVADO???*/
-		if (datos < 3) {
+		if (datos < 6) {
 			$.getJSON('https://rawgit.com/HighYitan/Noticias/master/data/jumi' + datos + '.json', function(jsonObject) {
 				añadir(jsonObject);
 			});

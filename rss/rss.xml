@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+ <title>Noticias de Castlevania</title>
+ <link>https://rawgit.com/HighYitan/Noticias/master/principal.html</link>
+ <description>En esta página podrás encontrar todo tipo de noticias de la mítica saga de videojuegos Castlevania</description>
+</channel>
+
+</rss>
