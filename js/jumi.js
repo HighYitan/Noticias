@@ -6,7 +6,7 @@ $(function(){
 
     $('#boton').click(function() { /*revisar EL BOTON HA DE ESTAR OPERATIVO SOLO SI EL AUTOSCROLL ESTA DESACTIVADO???*/
 		if (datos < 3) {
-			$.getJSON('https://rawgit.com/HighYitan/Noticias/master/data/jumi.json'/* + datos + '.json'*/, function(jsonObject) {
+			$.getJSON('https://rawgit.com/HighYitan/Noticias/master/data/jumi' + datos + '.json', function(jsonObject) {
 				añadir(jsonObject);
 			});
 			datos++;
