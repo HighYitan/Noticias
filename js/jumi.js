@@ -1,4 +1,5 @@
 var datos = 1;
+var automatico=false;
 /*
 var auto=false;
 */
@@ -15,26 +16,45 @@ $(function(){
 			$('#boton').text('No hay más noticias, jalabolas');
 		}
 	});
-/*
-	$('#autoscroll').click(function(){
-		if (auto) {
-			auto=false;
-			$('#autoscroll').text('Activar Autoscroll');
+	$('#automatico').click(function(){
+		if (automatico) {
+			automatico=false;
+			$('#automatico').text('Cargar noticias automáticamente');
 		} else {
-			auto=true;
-			$('#autoscroll').text('Desactivar AutoScroll');
+			automatico=true;
+			$('#automatico').text('No cargar noticias automáticamente');
 		}
 	});
-*/
+$(window).scroll(function() {
+		
+		jQuery.extend({
+    		percentage: function(a, b) {
+        		return Math.round((a / b) * 100);
+    		}
+		});
+
+		if (automatico) {
+			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300) { /*-------REVISAR offset*/
+				if (datos < 6) {
+					/*Mostrar ventana de carga*/
+	//				$('#loading').show();
+					/*Cargar noticias*/
+					$.getJSON('https://rawgit.com/HighYitan/Noticias/master/data/jumi' + datos + '.json', function(jsonObject) {
+						añadir(jsonObject);
+						/*Ocultar ventana de carga*/
+	//					$('#loading').hide();
+					});
+					datos++;
+				} else {
+					$('#boton').text('NO HAY MÁS NOTICIAS');
+				}			
+			}
+		}
+
+	});	
+	
 });	
-				/*
-				<div class="contenedor">
-					<a href="http://www.google.es"><h2 class="titulo">Castlevania Judgement el juego de lucha de la saga es novedad entre sus fans</h2></a>
-					<h3 class="fecha">18 de noviembre de 2008</h3>
-					<h4 class="presentacion">Hoy celebramos la salida al mercado del nuevo reboot de la saga de vídeojuegos: Castlevania, hoy el 27 de agosto de 2013 ha sido lanzado en PC tras 3 años de exclusividad en consolas (XBOX 360 y PlayStation 3), este lanzamiento dará la oportunidad a jugadores de ordenador a probar este maravilloso juego de la mano de Konami y el estudio Español MercurySteam...<div class="leer"><a href="http://www.google.es">Leer más...</a></div></h4>
-					<div class="container_caratula center-block"><a href="http://www.google.es"><img class="img-responsive caratula" src="img/lords.jpg"></a></div>
-				</div>
-*/
+
 function añadir(jsonObject) {
 	$('#contenedor').append('<div class="contenedor">'); 
 	$.each(jsonObject, function(i, item) {
