@@ -13,7 +13,7 @@ $(function(){
 			datos++;
 		}
 		else {
-			$('#boton').text('No hay más noticias, jalabolas');
+			$('#boton').text('No hay más noticias disponibles');
 		}
 	});
 	$('#automatico').click(function(){
@@ -46,7 +46,7 @@ $(window).scroll(function() {
 					});
 					datos++;
 				} else {
-					$('#boton').text('NO HAY MÁS NOTICIAS');
+					$('#boton').text('No hay más noticias disponibles');
 				}			
 			}
 		}
@@ -86,7 +86,26 @@ function añadir(jsonObject) {
 	$('#contenedor').append('</div>');
 }
 
+var favicon_images = [
+                    'http://website.com/img/tmp-0.gif',
+                    'http://website.com/img/tmp-1.gif',
+                    'http://website.com/img/tmp-2.gif',
+                    'http://website.com/img/tmp-3.gif'
+                ],
+    image_counter = 0; // To keep track of the current image
 
+setInterval(function() {
+    $("link[rel='icon']").remove();
+    $("link[rel='shortcut icon']").remove();
+    $("head").append('<link rel="icon" href="' + favicon_images[image_counter] + '" type="image/gif">');
+    
+	// If last image then goto first image
+	// Else go to next image    
+	if(image_counter == favicon_images.length -1)
+        image_counter = 0;
+    else
+        image_counter++;
+}, 200);
 
 
 
