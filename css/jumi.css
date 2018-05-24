@@ -42,7 +42,7 @@
 		font-size:125%;
 	}
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px){
 	[class*=navbar].navbar{
 		font-size:81%!important;
 	}
@@ -74,6 +74,8 @@ a:active {
     font-weight:bold;
     font-style:italic;
     font-size:115%;
+    border-style:solid;
+    border-size:10px;
 }
 .negro{
 	background-color:black!important;
@@ -82,7 +84,6 @@ a:active {
 	width:300px;
 	height:250px;
 	float:right;
-	background-color:blue;
 	position:absolute;
 	right:10px;
 	display:block;
@@ -100,14 +101,15 @@ a:active {
 	width:320px;
 	height:100px;
 	float:top;
-	background-color:blue;
 	top:10px;
 	display:none;
 }
 #anunciomovil iframe {
 	width:320px;
 	height:100px;
-
+	border:solid;
+	border-color:black;
+	border-width:0.25px;
 	margin-left:auto;
 	margin-right:auto;
 }

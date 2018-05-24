@@ -87,10 +87,10 @@ function añadir(jsonObject) {
 }
 
 var favicon_images = [
-                    'http://website.com/img/tmp-0.gif',
-                    'http://website.com/img/tmp-1.gif',
-                    'http://website.com/img/tmp-2.gif',
-                    'http://website.com/img/tmp-3.gif'
+                    'https://rawgit.com/HighYitan/Noticias/master/img/tmp-0.gif',
+                    'https://rawgit.com/HighYitan/Noticias/master/img/tmp-1.gif',
+                    'https://rawgit.com/HighYitan/Noticias/master/img/tmp-2.gif',
+                    'https://rawgit.com/HighYitan/Noticias/master/img/tmp-3.gif'
                 ],
     image_counter = 0; // To keep track of the current image
 
@@ -105,7 +105,7 @@ setInterval(function() {
         image_counter = 0;
     else
         image_counter++;
-}, 200);
+}, 100);
 
 
 
