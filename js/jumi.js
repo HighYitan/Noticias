@@ -7,8 +7,10 @@ $(function(){
 
     $('#boton').click(function() { /*revisar EL BOTON HA DE ESTAR OPERATIVO SOLO SI EL AUTOSCROLL ESTA DESACTIVADO???*/
 		if (datos < 6) {
+			$('#cargando').show();
 			$.getJSON('https://rawgit.com/HighYitan/Noticias/master/data/jumi' + datos + '.json', function(jsonObject) {
 				añadir(jsonObject);
+				$('#cargando').hide();
 			});
 			datos++;
 		}
@@ -36,13 +38,10 @@ $(window).scroll(function() {
 		if (automatico) {
 			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300) { /*-------REVISAR offset*/
 				if (datos < 6) {
-					/*Mostrar ventana de carga*/
-	//				$('#loading').show();
-					/*Cargar noticias*/
+					$('#cargando').show();
 					$.getJSON('https://rawgit.com/HighYitan/Noticias/master/data/jumi' + datos + '.json', function(jsonObject) {
 						añadir(jsonObject);
-						/*Ocultar ventana de carga*/
-	//					$('#loading').hide();
+						$('#cargando').hide();
 					});
 					datos++;
 				} else {
