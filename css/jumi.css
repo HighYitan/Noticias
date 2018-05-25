@@ -34,12 +34,8 @@
    		font-size:100%!important;
 	}
 	[id*=cargando]#cargando img{
-		position:absolute;
-		top:50%;
-		left:50%;
-		margin-top:-50.0%!important;
-		margin-left:-50.0%!important;
-		opacity:1;
+		margin-top:-125px!important;
+		margin-left:-125px!important;
 		width:250px!important;
 		max-width:250px!important;
 		max-height:250px!important;
@@ -52,32 +48,10 @@
 	[id*=boton]#boton{
 		font-size:125%;
 	}
-	[id*=cargando]#cargando img{
-		position:absolute;
-		top:50%;
-		left:50%;
-		margin-top:-20.0%;
-		margin-left:-20.0%;
-		opacity:1;
-		width:350px;
-		max-width:350px;
-		max-height:350px;
-	}
 }
 @media only screen and (max-width: 900px){
 	[class*=navbar].navbar{
 		font-size:80%;
-	}
-	[id*=cargando]#cargando img{
-		position:absolute;
-		top:50%;
-		left:50%;
-		margin-top:-25.0%;
-		margin-left:-25.0%;
-		opacity:1;
-		width:350px;
-		max-width:350px;
-		max-height:350px;
 	}
 }
 
@@ -296,8 +270,8 @@ a:active {
 	position:absolute;
 	top:50%;
 	left:50%;
-	margin-top:-11.0%;
-	margin-left:-11.0%;
+	margin-top: -175px;
+	margin-left:-175px;
 	opacity:1;
 	width:350px;
 	max-width:350px;
