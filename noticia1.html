@@ -1,149 +1,100 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <title>Ejemplo de bootstrap</title>
-	  <meta charset="utf-8">
-	  <meta name="description" content="Descripció curta important. Descripció curta important. Descripció curta important."/>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-	  <link rel="stylesheet" href="css/jumi.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  <script src="js/jumi.js"></script>
+		<title>Noticias de Castlevania</title>
+		<link rel="icon" type="image/gif" href="img/murcielago.gif" id="dynamic-favicon">
+		<meta charset="UTF-8">
+		<meta name="description" content="En esta página podrás encontrar todo tipo de noticias de la mítica saga de videojuegos Castlevania">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="css/castlevania.css">
+		<link rel="alternate" type="application/rss+xml" title="RSS Castlevania" href="https://rawgit.com/HighYitan/Noticias/master/rss/rss.xml">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/castlevania.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse ">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">JumiProg el poderoso</a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Jumillados</a></li>
-					<li><a href="#">JoanProg</a></li>
-					<li><a href="#">Jumi</a></li>
-					<li><a href="#">Joliver</a></li>
-				</ul>
+		<div id="cargando">
+			<img src="https://rawgit.com/HighYitan/Noticias/master/img/carga.gif" class="img-responsive center-block" alt="cargando">
+		</div>
+		<a  href="#">
+			<div id="portada" class="jumbotron container-fluid"><!--container-fluid-->
+				<!--<div class="container-fluid">-->
+				<!--img-responsive center-block-->
+		
 			</div>
-		</nav>
-		<div id="a" class="jumbotron text-center">
-			<h1>Jumillados en la vida real...</h1>
-			<br>
-			<div id="b" class="alert">
-				<p>El tres en raya me está jodiendo la vida</p>
-				<p>El examen de marcas nos va a destruir la cara</p>
-			</div>
-		</div>
-		<div class="container-fluid">
-			<div id="anuncio">
-		</div>
+		</a>
+		<div id="body">
+			<nav class="navbar navbar-inverse"><!--affix-->
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+	        				<span class="icon-bar"></span>
+	       					<span class="icon-bar"></span>
+	        				<span class="icon-bar"></span>
+	      				</button>
+						<a href="https://rawgit.com/HighYitan/Noticias/master/castlevania.html"><img class=" pull-left navbar-brand center-block negro" src="img/nav.png"></a>
 
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4"><br>
-					<p class="g"><span class="glyphicon glyphicon-trash"></span></p>
-					<p id="nsocios">¿Quieres encontrar basura como tú?</p>
-					<p id="nclubes">Estás de suerte, amego, tenemos a un plantel de jumillados como tú que pueden ayudarte</p>       
-				</div>
-				<div class="col-sm-4"><br>
-					<p class="g"><span class="glyphicon glyphicon-eye-open"></span></p>
-					<p>Suscribete a mi canal de Youtube o te destruyo compañero.</p>
-					<p>Te estoy observando así que dale "Me gusta" a todos los vídeos o mataré a toda tu familia.</p>
-					<button type="button" class="btn-lg btn-info" data-toggle="modal" data-target="#info"> Toda la información </button>
-				</div>
-				<div class="col-sm-4"><br>
-					<p class="g"><span class="glyphicon glyphicon-star"></span></p>
-					<p>Registrate en mi red de las mafias de Youtube y te regalo un gramo de polvo de quely's hecho en casa de Pau Vidal Tur</p>
-					<p>Dale favoritos a los vídeos de Adolfovix</p>
-					<p><input type="text" class="form-control" placeholder="usuari" required></p>
-					<p><input type="password" class="form-control" placeholder="password" required></p>
-					<button type="button" class="btn-lg btn-info"> Entrar a la página </button>
-				</div>
-			</div>    
-			<div class="row">
-				<div class="col"><br>
-					<h2>En noticias del día tenemos...</h2>
-					<p>Un retrosan salvaje apareció...</p>
-				  </div>
-			</div>
-		</div>
-		<div class="container">
-			<p>Imágenes en tiempo real de Retrosan y sus gases tóxicos en clase de programación con Jumi, su padre.</p>
-			<img id="imghorizontal" src="img/pedoretro.jpg" class="img-responsive center-block">
-			<br>
-			<p>Reacción de Jumi, su padre:</p>
-			<img id="imgvertical" src="img/Tio1.jpg" class="img-responsive center-block">
-		</div>
-	  
-
-		<div id="info" class="modal fade" role="dialog">
-			<div class="modal-dialog">
-
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Selecciona tu Comunidad Autónoma</h4>
 					</div>
-					<div class="modal-body">
-						<select class="form-control" id="comunidades">
-							<option selected value="0">Selecciona... cabrón</option>
-						</select>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn-lg btn-info" id="verinfo"> Ver la información </button>
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="nav navbar-nav">
+							<li><a href="https://rawgit.com/HighYitan/Noticias/master/noticia1.html">Primera noticia</a></li>
+							<li><a href="https://rawgit.com/HighYitan/Noticias/master/noticia2.html">Segunda noticia</a></li>
+							<li><a href="https://rawgit.com/HighYitan/Noticias/master/noticia3.html">Tercera noticia</a></li>
+						<!--	<li><a id="automatico" href="#">Cargar noticias automáticamente</a></li>	-->
+						</ul>
 					</div>
 				</div>
+			</nav>
+			<div id="anunciomovil" class="center-block">
+				
+				<iframe src="anunciomovil.html"></iframe>
+				<!--Anuncio 300x250-->
+			</div>
+			<div id="contenedor_noticias" class="container-fluid">
+			
+				<div id="anuncio">
+					
+				<iframe src="anuncio.html"></iframe>
+					<!--Anuncio 300x250-->
+				</div>
+
+				<div class="contenedor">
+					<a href="https://rawgit.com/HighYitan/Noticias/master/noticia3.html"><h2 class="titulo">Castlevania: Lords of Shadow, reboot de la legendaria historia vampírica</h2></a>
+					<h3 class="fecha">27 de agosto de 2013</h3>
+					<h4 class="presentacion">Hoy celebramos la salida al mercado del nuevo reboot de la saga de vídeojuegos: Castlevania, hoy el 27 de agosto de 2013 ha sido lanzado en PC tras 3 años de exclusividad en consolas (XBOX 360 y PlayStation 3), este lanzamiento dará la oportunidad a jugadores de ordenador a probar este maravilloso juego de la mano de Konami y el estudio Español MercurySteam...</h4>
+					<div class="container_caratula center-block">
+						<img class="img-responsive caratula" src="img/lords.jpg" alt="lords1" data-toggle="modal" data-target="#myModal">
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" role="dialog">
+						    <div class="modal-dialog">
+						      	<!-- Modal content-->
+						      	<div class="modal-content">
+						        	<div class="modal-header">
+						          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+						          		<h1 class="modal-title">Castlevania: Lords of Shadow</h4>
+						        	</div>
+						        	<div class="modal-body">
+						         		<img class="img-responsive caratula" src="img/lords.jpg" alt="lords1">
+						        	</div>
+						      	</div>
+						      
+						    </div>
+						</div>
+					</div>
+					<h4 class="presentacion">Hoy celebramos la salida al mercado del nuevo reboot de la saga de vídeojuegos: Castlevania, hoy el 27 de agosto de 2013 ha sido lanzado en PC tras 3 años de exclusividad en consolas (XBOX 360 y PlayStation 3), este lanzamiento dará la oportunidad a jugadores de ordenador a probar este maravilloso juego de la mano de Konami y el estudio Español MercurySteam...</h4>
+
+					<div class="container_caratula center-block">
+						<div id="video" class="embed-responsive embed-responsive-16by9">
+	                        <iframe src="https://www.youtube.com/embed/AFHzhcXQlxE" allowfullscreen></iframe>
+	                    </div>
+                	</div>
+                	<div class="pie">
+                		<h4 class="presentacion">Hoy celebramos la salida al mercado del nuevo reboot de la saga de vídeojuegos: Castlevania, hoy el 27 de agosto de 2013 ha sido lanzado en PC tras 3 años de exclusividad en consolas (XBOX 360 y PlayStation 3), este lanzamiento dará la oportunidad a jugadores de ordenador a probar este maravilloso juego de la mano de Konami y el estudio Español MercurySteam...</h4>
+                	</div>
+				</div>
 			</div>
 		</div>
-		<footer class="footer"> 
-			<div class="container"> 
-				<ul class="footer-links"> 
-					<li>Link a Youtube</li> 
-					<li>Sobre....</li> 
-				</ul> 
-				<p>Creado por Khris el de las metanfetaminas.</p> 
-			</div> 
-		</footer>
-<!-- 
-  
-<div class="container">
-  <p>Les imatges son ampliades fins un màxim (fins a la seva grandària natural o la grandària de l'element contenidor)</p>
-  <img id="imghorizontal" src="http://www.blirk.net/wallpapers/1280x720/beach-wallpaper-1.jpg" class="img-responsive center-block">
-  <br>
-  <img id="imgvertical" src="https://s-media-cache-ak0.pinimg.com/originals/ff/72/a9/ff72a9588259e60465dd490ba6686152.jpg" class="img-responsive center-block">
-</div>
-  
-
-<div id="info" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Selecciona tu Comunidad Autónoma</h4>
-      </div>
-      <div class="modal-body">
-          <select class="form-control" id="comunidades">
-              <option selected value="0">Selecciona...</option>
-          </select>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-lg btn-info" id="verinfo"> ver información </button>
-      </div>
-    </div>
-
-  </div>
-</div>
-<footer class="footer"> 
-    <div class="container"> 
-        <ul class="footer-links"> 
-            <li>Facebook</li> 
-            <li>About</li> 
-        </ul> 
-        <p>Developed by Miguel Urbina
-        </p> 
-    </div> 
-</footer></body></html> -->
 	</body>
 </html>
