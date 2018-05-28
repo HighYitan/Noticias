@@ -277,7 +277,9 @@ a:active {
 	max-width:350px;
 	max-height:350px;
 }
-
+#video{
+    margin:1%;
+}
 /*
 @media(max-width: 768px){
 	.nav>li{
