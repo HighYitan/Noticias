@@ -2,95 +2,46 @@
 <rss version='2.0' xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 	<atom:link href="https://rawgit.com/HighYitan/Noticias/master/rss/rss.xml" rel="self" type="application/rss+xml"/>
-	 <title>Noticias de Castlevania</title>
-	 <link>https://rawgit.com/HighYitan/Noticias/master/castlevania.html</link>
-	 <description>En esta página podrás encontrar todo tipo de noticias de la mítica saga de videojuegos Castlevania</description>
-	 <image>
+	<title>Noticias de Castlevania</title>
+	<link>https://rawgit.com/HighYitan/Noticias/master/castlevania.html</link>
+	<description>En esta página podrás encontrar todo tipo de noticias de la mítica saga de videojuegos Castlevania</description>
+	<image>
 			<title>Noticias de Castlevania</title>
 			<link>https://rawgit.com/HighYitan/Noticias/master/castlevania.html</link>
 			<url>https://rawgit.com/HighYitan/Noticias/master/img/Castlevania.jpg</url>
 	</image>
-</channel>
-
-</rss>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<?xml version='1.0' encoding='UTF-8' ?>
-<rss version='2.0' xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-	<atom:link href="https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/rss/rss.xml" rel="self" type="application/rss+xml"/>
-	<title>ClimbArt - Escalada deportiva, clásica, alpinismo, hielo, bloque, competiciones</title>
-	<link>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html</link>
-	<description>ClimbArt - Últimas noticias sobre escaladores, escalada deportiva, clásica, alpinismo, hielo, bloque y competiciones.</description>
-	<image>
-		<title>ClimbArt - Escalada deportiva, clásica, alpinismo, hielo, bloque, competiciones</title>
-		<link>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html</link>
-		<url>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/img/logo.png</url>
-	</image>
 	<item>
-		<title>ClimbArt - Patxi Usobiaga encadena Pachamama 9a+/b</title>
-        <guid>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news1.html</guid>
-		<link>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news1.html</link>
-		<description>		
-			<![CDATA[<img src="https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/img/n1big.jpg" alt="Patxi Usobiaga">
+		<title>Castlevania: Lords of Shadow 2</title>
+        <guid>https://rawgit.com/HighYitan/Noticias/master/noticia1.html</guid>
+		<link>https://rawgit.com/HighYitan/Noticias/master/noticia1.html</link>
+		<description>
+			Hoy celebramos la salida al mercado del nuevo reboot de la saga de vídeojuegos: Castlevania, hoy el 27 de agosto de 2013 ha sido lanzado en PC tras 3 años de exclusividad en consolas (XBOX 360 y PlayStation 3), este lanzamiento dará la oportunidad a jugadores de ordenador a probar este maravilloso juego de la mano de Konami y el estudio Español MercurySteam...
+			<![CDATA[<img src="https://rawgit.com/HighYitan/Noticias/master/img/lords.jpg" alt="Lords2">
 			]]>
-			Patxi Usobiaga encadena Pachamama 9a+/b en Oliana (España). ClimbArt. Noticia y vídeo sobre escalada.
 		</description>
-		<pubDate>Wed, 25 Apr 2018 13:38:16 +0200</pubDate>
+		<pubDate>Fri, 28 Feb 2014 11:11:11 GMT</pubDate>
 	</item>
 	<item>
-		<title>ClimbArt - Chris Sharma encadena Big fish 8c+/9a</title>
-        <guid>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news2.html</guid>
-		<link>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news2.html</link>
-		<description>		
-			<![CDATA[<img src="https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/img/n2big.jpg" alt="Chris Sharma">
+		<title>Castlevania: Lords of Shadow - Mirror of Fate</title>
+        <guid>https://rawgit.com/HighYitan/Noticias/master/noticia2.html</guid>
+		<link>https://rawgit.com/HighYitan/Noticias/master/noticia2.html</link>
+		<description>
+			Hoy celebramos la salida al mercado del nuevo reboot de la saga de vídeojuegos: Castlevania, hoy el 27 de agosto de 2013 ha sido lanzado en PC tras 3 años de exclusividad en consolas (XBOX 360 y PlayStation 3), este lanzamiento dará la oportunidad a jugadores de ordenador a probar este maravilloso juego de la mano de Konami y el estudio Español MercurySteam... 7 meses después de su salida una review bien hecha del juego
+			<![CDATA[<img src="https://rawgit.com/HighYitan/Noticias/master/img/lords.jpg" alt="LordsMirror">
 			]]>
-			Chris Sharma completa su trilogía de psicobloc y encadena ‘Big fish’, vía de 8c+/9a en Sóller, Mallorca (España). ClimbArt. Noticia y vídeo sobre escalada.
 		</description>
-		<pubDate>Sat, 14 Apr 2018 13:00:10 +0200</pubDate>  
+		<pubDate>Fri, 31 Oct 2013 12:12:12 GMT</pubDate>
+	</item>
+	<item>
+		<title>Castlevania: Lords of Shadow</title>
+        <guid>https://rawgit.com/HighYitan/Noticias/master/noticia3.html</guid>
+		<link>https://rawgit.com/HighYitan/Noticias/master/noticia3.html</link>
+		<description>
+			Hoy celebramos la salida al mercado del nuevo reboot de la saga de vídeojuegos: Castlevania, hoy el 27 de agosto de 2013 ha sido lanzado en PC tras 3 años de exclusividad en consolas (XBOX 360 y PlayStation 3), este lanzamiento dará la oportunidad a jugadores de ordenador a probar este maravilloso juego de la mano de Konami y el estudio Español MercurySteam...
+			<![CDATA[<img src="https://rawgit.com/HighYitan/Noticias/master/img/lords.jpg" alt="Lords">
+			]]>
+		</description>
+		<pubDate>Tue, 27 Aug 2013 00:00:33 GMT</pubDate>
 	</item>
 </channel>
 </rss>
--->

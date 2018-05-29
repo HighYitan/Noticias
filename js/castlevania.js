@@ -61,7 +61,7 @@ function añadir(jsonObject) {
 				
 				'<a href="http://www.google.es"><h2 class="titulo">' + item.titulo + '</h2></a>' +
 				'<h3 class="fecha">' + item.fecha + '</h3>' +
-				'<h4 class="presentacion">' + item.presentacion + '<div class="leer"><a href="http://www.google.es">Leer más...</a></div></h4>' +
+				'<h4 class="presentacion">' + item.presentacion + '<br><br><span class="leer"><a href="https://rawgit.com/HighYitan/Noticias/master/noticia1.html">Leer más...</a></span></h4>' +
 				'<div class="container_caratula center-block"><a href="http://www.google.es"><img class="img-responsive caratula" src="' + item.imagen + '" alt="' + item.alter + '"></a></div>' 
 				
 /*
