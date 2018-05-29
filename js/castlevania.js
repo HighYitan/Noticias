@@ -104,7 +104,7 @@ setInterval(function() {
         image_counter = 0;
     else
         image_counter++;
-}, 500);
+}, 100);
 
 
 
