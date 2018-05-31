@@ -84,7 +84,7 @@ a:active {
     font-style:italic;
     font-size:115%;
     border-style:solid;
-    border-size:10px;
+    border:10px;
 }
 .negro{
 	background-color:black!important;
@@ -301,7 +301,7 @@ a:active {
 }
 .close{
   	font-size: 50px;
-  	font-weight: 1000;
+  	font-weight: 1000px;
   	line-height: 0.5;
 
 	color: red; 
