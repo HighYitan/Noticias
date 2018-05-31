@@ -9,3 +9,5 @@ La página consta de un banner con el logo de la página en la parte superior, s
 ## He validado tanto los archivos HTML como los CSS del proyecto con W3CValidator: [Validador de W3C](https://validator.w3.org/)
 
 Las noticias se cargan mediante 5 distintos JSON rellenados con 3 noticias cada uno, la imagen de las noticias es modal y hay un vídeo adjuntado responsive.
+
+También he colocado un favicon en formato .gif que se mueve cuando se carga la página
